@@ -116,6 +116,7 @@ body, html {
 a {
     font-weight: 700;
     color: #23a4cc;
+    text-decoration: none;
 }
 
 p {
@@ -136,24 +137,76 @@ h2 {
     font-size: 1em;
 }
 
+.btn {
+    background-color: #b21e49;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2.5;
+    text-align: center;
+    box-shadow: 2px 2px 0px #DADADA;
+    height: 2.5em;
+    width: 100%;
+    display: block;
+}
+
+.btn:hover {
+    background-color: #ff1256;
+}
+
+input.btn {
+    background-color: #ff1256;
+}
+
+input.btn:hover {
+    background-color: #b21e49;
+}
+
+/*!!!!!!!!!!!!!!&&&&&%%%%%$$$$$######*** I DON'T SEE THIS CLASS ANYWHERE IN THE HTML FILES IN THE SOLUTION CODE **********/
+.no-border {
+    border: none;
+}
+
 /** Header =========*/
 
 .main-header {
     width: 100%;
+    background: #eee;
+    margin: auto;
 }
 
 #logo {
     width: 100%;
-    /*margin: auto;
-    padding: 0;*/
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
 }
 
 nav {
     width: 100%;
+    background: #ddd;
 }
 
 nav ul {
+    list-style: none;
+    padding: 0;
+}
 
+nav ul li {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav ul li a {
+    font-size: 1.125em;
+    text-transform: uppercase;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #ff1256;
 }
 
 /** Main Content Area =========*/
@@ -162,18 +215,20 @@ main {
     width: 96%;
     padding: 0 2%;
     margin: auto;
+    max-width: 960px;
 }
 
 /* HOME PAGE AND REVIEWS PAGE ================================ */
 
 /* Featured News Item =========================== */
 
-.hero-area {
+.top-story {
     width: 100%;
 }
 
 .top-img {
     width: 100%;
+    margin: 0;
 }
 
 /* Side Bar =========================== */
@@ -182,9 +237,28 @@ main {
     width: 100%;
 }
 
+.newsletter {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.newsletter input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.newsletter input[type="text"] {
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
 .sidebar-upcoming,
-.sidebar-faq{
+.sidebar-faq {
     display: none;
+}
+
+.detail .newsletter {
+    border-bottom: none;
 }
 
 /* News/Reviews Feed Section =========================== */
@@ -197,15 +271,42 @@ main {
     display: none;
 }
 
-.feed-item{
+.feed-item {
     clear: both;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
 }
 
+.feed-type {
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.feed-item h2 {
+    margin: 0;
+}
+
+.feed-item h2 a {
+    color: #222;
+}
+
+.feed-item h2 a:hover {
+    color: #23a4cc;
+}
+
+.feed-item:nth-child(7) {
+    border-bottom: none;
+}
+
+/*THESE ARE MOBILE STYLES, RIGHT?? SO WHY AREN'T THEY 45% AND 50% ON SAME LINE IN MOBILE VIEW??
+THEY DON'T SPLIT UNTIL 940px*/
 .feed-img {
     width: 45%;
     padding-left: 0;
     padding-right: 2.5%;
+    /*padding-right: 3%;*/
     float: left;
+    margin: 0;
 }
 
 .feed-info {
@@ -213,12 +314,16 @@ main {
     padding-left: 2.5%;
     padding-right: 0;
     float: left;
+    /*OPTION B:*/
+    /*width: 42%;
+    float: left;*/
 }
 
 /* DETAIL PAGES ================================ */
 
-.reviews-img {
+.reviews-img, .news-img {
     width: 100%;
+    margin: 0;
 }
 
 /** Footer =========*/
@@ -234,6 +339,8 @@ footer {
     margin: auto;
 }
 
+/*!!!! CLEARFIX !!!!!
+SEE LINES 372-392. Clearfix is only used there. No CSS for .clearfix that doesn't ALSO have a pseudoclass. So why did we add the clearfix class like 8 times in index.html???  Does it actually do anything??? Since the CSS is only for pseudoclasses???*/
 
 
 
