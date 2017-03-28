@@ -95,9 +95,50 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* COLOR HEX CODES for reference =============================================
+
+Dark Pink (Magenta): #b21e49;
+Light Grey: #eee;
+Bright Pink: #ff1256;
+Dark Grey: #222;
+Blue: #23a4cc;
+
+============================================= */
+
+/*GLOBAL STYLES*/
+body, html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #222;
+    background-color: #eee;
+}
+
+a {
+    font-weight: 700;
+    color: #23a4cc;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.4em;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 1em;
+}
+
 /** Header =========*/
 
-header {
+.main-header {
     width: 100%;
 }
 
@@ -174,7 +215,7 @@ main {
     float: left;
 }
 
-/* DETAILED PAGES ================================ */
+/* DETAIL PAGES ================================ */
 
 .reviews-img {
     width: 100%;
@@ -285,15 +326,182 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+/*Going UP in size from mobile = using the min-width property. As soon as browser window or device size is at LEAST the specified min-width, styles will change.*/
+
+@media screen and (min-width: 768px) {
+    /*Tablet styles*/
+    
+    /*Header*/
+    .main-header {
+        width: 94%;
+    }
+
+    #logo {
+        width: 40%;
+        float: left;
+    }
+
+    nav {
+        width: 60%;
+        float: right;
+    }
+    
+    /* Featured News Item (Hero Area) =========================== */
+    .top-story {
+        width: 100%;
+    }
+
+    .top-img {
+        width: 57%;
+        float: left;
+        padding-right: 3%;
+    }
+
+    .top-info {
+        width: 37%;
+        float: left;
+    }
+    
+    /* Side Bar =========================== */
+    .sidebar {
+        clear: both;
+        width: 37%;
+        float: right;
+    }
+
+    .sidebar-upcoming, .sidebar-faq {
+        display: block;
+    }
+
+    /* News/Reviews Feed Section =========================== */
+    .feed {
+        width: 60%;
+        float: left;
+        border-right: 1px solid #ccc;
+    }
+ 
+    .feed-img {
+        width: 35%;
+    }
+
+    /* Detail Pages ================================ */
+    .reviews-img, .news-img {
+        width: 50%;
+        margin: 2%;
+        float: left;
+    }
+ 
+    .detail-title {
+        width: 48%;
+        float: left;
+    }
+
+    aside.detail {
+        width: 100%;    
+    }
+
+    .detail .newsletter h2 {
+        display: inline;
+    }
+
+    .detail .newsletter input {
+        display: inline;
+    }
+
+    /* Footer =========================== */
+    footer {
+        width: 100%;
+        clear: both;
+    }
+
+    #footer-logo {
+        width: 30%;
+        margin: auto;
+    }
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media screen and (min-width: 940px) {
+    /*Desktop styles*/
+    /* Header =========================== */
+    #logo {
+        width: 30%;
+    }
+    nav {
+        width: 60%;
+    }
+    
+    /* Featured News Item =========================== */    
+    .top-story {
+        width: 65%;
+        float: left;
+        border: none;
+    }
+
+    .top-img {
+        width: 100%;
+    }
+    
+    .top-info {
+        width: 100%;
+        float: none;
+    }
+    
+    /* Side Bar =========================== */
+    .sidebar {
+        clear: none;
+        width: 30%;
+        float: right;
+    }
+    
+    /* News/Reviews Feed Section =========================== */
+    .feed {
+        width: 100%;
+        float: none;
+        clear: both;    
+    }
+    
+    .feed p {
+        display: block;
+    }
+ 
+    .feed-img {
+        width: 20%;
+    }
+    
+    /* DETAILED PAGES ================================ */
+    article.detailed-content {
+        width: 65%;
+        float: left;
+    }
+    
+    .reviews-img, .news-img {
+        width: 100%;
+        float: none;
+    }
+    
+    .detail-title {
+        width: 100%;
+        float: none;
+    }
+
+    .detail {
+        width: 30%;
+        float: left;
+    }
+    
+    .detail .newsletter input {
+        display: block;
+        width: 100%;
+    }
+    
+    /* Footer =========================== */
+    footer {
+        width: 100%;
+    }   
+
+    #footer-logo {
+        width: 20%;
+    }   
 }
 
 /* ==========================================================================
