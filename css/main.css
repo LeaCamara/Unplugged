@@ -344,6 +344,20 @@ THEY DON'T SPLIT UNTIL 940px*/
 
 /* ABOUT PAGE ================================ */
     
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.strong {
+    font-weight: 700;
+}
+
 .mission {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -359,22 +373,11 @@ THEY DON'T SPLIT UNTIL 940px*/
 }
 
 .team-img {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 40%;
     padding-bottom: 40%;
     float: left;
     margin-right: 20px;
     border: 1px solid #ccc;
-}
-
-.team-name {
-
-}
-
-.team-description {
-
 }
 
 #team-img-jack {
@@ -389,7 +392,9 @@ THEY DON'T SPLIT UNTIL 940px*/
     background: url('../img/team-member-3-willow.jpg');
 }
 
-#team-img-jack {
+#team-img-jack,
+#team-img-lana,
+#team-img-willow {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -540,6 +545,10 @@ SEE LINES 372-392. Clearfix is only used there. No CSS for .clearfix that doesn'
         line-height: 2;
         position: relative;
         top: 16px;
+    }
+
+    .about-nav {
+        padding: 0 1%;
     }
     
     /* Featured News Item (Hero Area) =========================== */
