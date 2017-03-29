@@ -698,11 +698,19 @@ SEE LINES 372-392. Clearfix is only used there. No CSS for .clearfix that doesn'
         width: 65%;
         float: left;
         border: none;
-        padding-top: 
+        padding-top: 10px;
+        border-right: 1px solid #ccc;
+        padding-right: 2%;
     }
 
     .top-img {
         width: 100%;
+        max-width: 620px;
+        padding-bottom: 1em;
+    }
+
+    .top-img img {
+        max-width: 620px;
     }
     
     .top-info {
@@ -716,26 +724,40 @@ SEE LINES 372-392. Clearfix is only used there. No CSS for .clearfix that doesn'
         width: 30%;
         float: right;
     }
+
+    .sidebar-faq {
+        border: none;
+    }
     
     /* News/Reviews Feed Section =========================== */
     .feed {
         width: 100%;
         float: none;
-        clear: both;    
+        clear: both;
+        padding-top: 20px;
+        border-top: 1px solid #ccc;
+        border-right: none;    
     }
     
     .feed p {
         display: block;
+        margin-top: 0;
+    }
+
+    .feed h2 {
+        margin: 0;
     }
  
     .feed-img {
         width: 20%;
     }
     
-    /* DETAILED PAGES ================================ */
+    /* DETAIL PAGES ================================ */
     article.detailed-content {
         width: 65%;
         float: left;
+        padding-right: 2.5%;
+        border-right: 1px solid #ccc;
     }
     
     .reviews-img, .news-img {
@@ -751,11 +773,20 @@ SEE LINES 372-392. Clearfix is only used there. No CSS for .clearfix that doesn'
     .detail {
         width: 30%;
         float: left;
+        padding-left: 2%;
     }
     
     .detail .newsletter input {
         display: block;
         width: 100%;
+    }
+
+    .detail .newsletter .btn {
+        width: 100%;
+    }
+
+    aside.detail .newsletter input[type="text"] {
+        margin-right: 0;
     }
     
     /* Footer =========================== */
