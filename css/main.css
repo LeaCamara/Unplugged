@@ -124,6 +124,11 @@ p {
     line-height: 1.4;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 h1, h2, h3, h4 {
     font-weight: 700;
 }
@@ -183,6 +188,11 @@ input.btn:hover {
     padding: 0;
 }
 
+#logo img {
+    width: 100%;
+    margin: auto;
+}
+
 nav {
     width: 100%;
     background: #ddd;
@@ -224,11 +234,13 @@ main {
 
 .top-story {
     width: 100%;
+    border-bottom: 1px solid #ccc;
 }
 
 .top-img {
     width: 100%;
     margin: 0;
+    height: auto;
 }
 
 /* Side Bar =========================== */
@@ -304,9 +316,13 @@ THEY DON'T SPLIT UNTIL 940px*/
     width: 45%;
     padding-left: 0;
     padding-right: 2.5%;
-    /*padding-right: 3%;*/
     float: left;
     margin: 0;
+    /*OPTION B:*/
+    /*width: 45%;
+    float: left;
+    margin: 0;
+    padding-right: 3%;*/
 }
 
 .feed-info {
@@ -326,11 +342,67 @@ THEY DON'T SPLIT UNTIL 940px*/
     margin: 0;
 }
 
+/* ABOUT PAGE ================================ */
+    
+.mission {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.team {
+    padding-top: 15px;
+}
+
+.team-member {
+    padding: 15px 0;
+}
+
+.team-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    padding-bottom: 40%;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+}
+
+.team-name {
+
+}
+
+.team-description {
+
+}
+
+#team-img-jack {
+    background: url('../img/team-member-1-jack.jpg');
+}
+
+#team-img-lana {
+    background: url('../img/team-member-2-lana.jpg');
+}
+
+#team-img-willow {
+    background: url('../img/team-member-3-willow.jpg');
+}
+
+#team-img-jack {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /** Footer =========*/
 
 footer {
     width: 100%;
     margin: auto;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-top: 20px;
     clear: both;
 }
 
