@@ -486,6 +486,19 @@ THEY DON'T SPLIT UNTIL 940px*/
     background-repeat: no-repeat;
 }
 
+/* FAQ Page ================================ */
+.faq-item {
+    border-bottom: 1px solid #cccccc;
+}
+
+.faq-item:nth-child(5) {
+    border-bottom: none;
+}
+
+.faq-item h3 {
+    font-weight: 400;
+}
+
 /** Footer =========*/
 
 footer {
@@ -675,9 +688,17 @@ SEE LINES 372-392. Clearfix is only used there. No CSS for .clearfix that doesn'
         float: left;
         border-right: 1px solid #ccc;
     }
+
+    .feed h2 {
+        font-size: 1.125em;
+    }
  
     .feed-img {
         width: 35%;
+    }
+
+    .feed-item {
+        padding-right: 20px;
     }
 
     .feed-info {
@@ -745,6 +766,72 @@ SEE LINES 372-392. Clearfix is only used there. No CSS for .clearfix that doesn'
         margin-right: 10px;
     }
 
+    /* ABOUT PAGE ================================ */
+    .contact-info {
+        width: 40%;
+        float: left;
+    }
+
+    .map-container {
+        position: relative;
+        padding-bottom: 40%;
+        height: 0;
+        overflow: hidden;
+        width: 58%;
+        float: left;
+        border: 1px solid #333;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+
+    .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mission {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 15px 0;
+    }
+
+    .team {
+        padding-top: 15px;
+    }
+
+    .team-member {
+        padding: 15px 0;
+    }
+
+    .team-img {
+        width: 20%;
+        padding-bottom: 20%;
+        margin-right: 10%;
+    }
+
+    /* CONCERT PAGE ================================ */
+    .concert-feed {
+        width: 100%;
+        border-right: none;
+    }
+
+    .concert-item {
+        width: 45%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    .concert-feed .feed-item {
+        clear: none;
+    }
+
+    .concert-copy {
+        width: 60%;
+    }
+
     /* Footer =========================== */
     footer {
         width: 100%;
@@ -800,7 +887,6 @@ SEE LINES 372-392. Clearfix is only used there. No CSS for .clearfix that doesn'
 
     .top-img {
         width: 100%;
-        max-width: 620px;
         padding-bottom: 1em;
     }
 
@@ -886,13 +972,33 @@ SEE LINES 372-392. Clearfix is only used there. No CSS for .clearfix that doesn'
 
     /* ABOUT PAGE ================================ */
     
-    .contact-info {
-        float: left;
-        margin-right: 3%;
+    .team-member {
+        padding: 15px 0;
     }
 
-    .map-container iframe {
+    .team-img {
+        width: 20%;
+        padding-bottom: 20%;
+        margin-right: 5%;
+    }
+
+    .team-name {
+        margin-top: 0;
+    }
+
+    .team-description {
+        display: block;
+    }
+
+    .concert-feed {
+        width: 63%;
         float: left;
+    }
+
+    .concert-main aside {
+        display: block;
+        float: left;
+        width: 20;
     }
     
     /* Footer =========================== */
