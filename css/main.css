@@ -387,13 +387,21 @@ THEY DON'T SPLIT UNTIL 940px*/
     width: 75%;
 }
 
-.concert-main aside{
+.concert-main aside {
     display: none;
 }
 
-
 /* ABOUT PAGE ================================ */
     
+.contact-area {
+    padding-top: 30px;
+}
+
+.contact-info {
+    width: 100%;
+    padding-top: 30px;
+}
+
 .contact-info ul {
     list-style: none;
     padding: 0;
@@ -402,10 +410,6 @@ THEY DON'T SPLIT UNTIL 940px*/
 .contact-info ul li {
     display: inline-block;
     vertical-align: top;
-}
-
-.strong {
-    font-weight: 700;
 }
 
 .map-container {
@@ -423,10 +427,15 @@ THEY DON'T SPLIT UNTIL 940px*/
     height: 100%;
 }
 
+.strong {
+    font-weight: 700;
+}
+
 .mission {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     padding: 15px 0;
+    width: 100%;
 }
 
 .team {
@@ -443,6 +452,18 @@ THEY DON'T SPLIT UNTIL 940px*/
     float: left;
     margin-right: 20px;
     border: 1px solid #ccc;
+}
+
+.team-name {
+    margin-bottom: 0;
+}
+
+.team-title {
+    margin-top: 0;
+}
+
+.team-description {
+    display: none;
 }
 
 #team-img-jack {
