@@ -160,6 +160,10 @@ h2 {
     background-color: #ff1256;
 }
 
+.btn i {
+    padding-right: 10px;
+}
+
 input.btn {
     background-color: #ff1256;
 }
@@ -185,7 +189,6 @@ input.btn:hover {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding: 0;
 }
 
 #logo img {
@@ -219,6 +222,10 @@ nav ul li a:hover {
     color: #ff1256;
 }
 
+nav i {
+    padding-right: 10px;
+}
+
 /** Main Content Area =========*/
 
 main {
@@ -241,6 +248,10 @@ main {
     width: 100%;
     margin: 0;
     height: auto;
+}
+
+.top-img img {
+    width: 100%;
 }
 
 /* Side Bar =========================== */
@@ -342,6 +353,45 @@ THEY DON'T SPLIT UNTIL 940px*/
     margin: 0;
 }
 
+/* CONCERT PAGE ================================ */
+.concert-item {
+    padding-top: 5%;
+}
+
+.concert-item h3 {
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid #ddd;
+    width: 3em;
+    height: 3em;
+    float: left;
+    margin: 0 5% 0 0;
+}
+
+.concert-item p {
+    display: block;
+    margin: 0;
+    line-height: 1;
+}
+
+.concert-item:nth-child(7) {
+    border-bottom: 1px solid #ccc;
+}
+
+.concert-item:nth-child(10) {
+    border-bottom: none;
+}
+
+.concert-copy {
+    float: left;
+    width: 75%;
+}
+
+.concert-main aside{
+    display: none;
+}
+
+
 /* ABOUT PAGE ================================ */
     
 .contact-info ul {
@@ -356,6 +406,21 @@ THEY DON'T SPLIT UNTIL 940px*/
 
 .strong {
     font-weight: 700;
+}
+
+.map-container {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+ 
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .mission {
@@ -796,6 +861,17 @@ SEE LINES 372-392. Clearfix is only used there. No CSS for .clearfix that doesn'
 
     aside.detail .newsletter input[type="text"] {
         margin-right: 0;
+    }
+
+    /* ABOUT PAGE ================================ */
+    
+    .contact-info {
+        float: left;
+        margin-right: 3%;
+    }
+
+    .map-container iframe {
+        float: left;
     }
     
     /* Footer =========================== */
