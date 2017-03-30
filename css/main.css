@@ -181,7 +181,7 @@ input.btn:hover {
 }
 
 #logo {
-    width: 100%;
+    width: 96%;
     margin: 0 auto;
     text-align: center;
     background: black;
@@ -324,11 +324,6 @@ THEY DON'T SPLIT UNTIL 940px*/
     padding-right: 2.5%;
     float: left;
     margin: 0;
-    /*OPTION B:*/
-    /*width: 45%;
-    float: left;
-    margin: 0;
-    padding-right: 3%;*/
 }
 
 .feed-info {
@@ -336,9 +331,6 @@ THEY DON'T SPLIT UNTIL 940px*/
     padding-left: 2.5%;
     padding-right: 0;
     float: left;
-    /*OPTION B:*/
-    /*width: 42%;
-    float: left;*/
 }
 
 /* DETAIL PAGES ================================ */
@@ -743,7 +735,7 @@ footer {
     }
 
     ul.article-meta-info {
-        list-style: none;
+        list-style-type: none;
         padding: 0;
         width: 100%;
         height: 2em;
